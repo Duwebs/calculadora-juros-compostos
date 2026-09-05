@@ -1,21 +1,63 @@
 @import "tailwindcss";
 
+/* Design tokens are runtime CSS variables so both themes share one utility set. */
+:root {
+  --ink: #171717;
+  --body: #4d4d4d;
+  --mute: #8f8f8f;
+  --faint: #a1a1a1;
+  --hairline: #ebebeb;
+  --hairline-soft: #f2f2f2;
+  --canvas: #fafafa;
+  --elevated: #ffffff;
+  --link: #0070f3;
+  --link-deep: #0761d1;
+  --link-soft: #d3e5ff;
+  --error: #ee0000;
+  --violet: #7928ca;
+  --cyan: #50e3c2;
+  --pink: #ff0080;
+  --amber: #f5a623;
+  color-scheme: light;
+}
+
+.dark {
+  --ink: #ededed;
+  --body: #a1a1aa;
+  --mute: #71717a;
+  --faint: #5f5f6b;
+  --hairline: #2e2e33;
+  --hairline-soft: #232327;
+  --canvas: #0b0b0d;
+  --elevated: #131317;
+  --link: #3b82f6;
+  --link-deep: #60a5fa;
+  --link-soft: #12314f;
+  --error: #f87171;
+  --violet: #a78bfa;
+  --cyan: #2dd4bf;
+  --pink: #fb7185;
+  --amber: #fbbf24;
+  color-scheme: dark;
+}
+
 @theme {
-  --color-ink: #171717;
-  --color-body: #4d4d4d;
-  --color-mute: #8f8f8f;
-  --color-faint: #a1a1a1;
-  --color-hairline: #ebebeb;
-  --color-hairline-soft: #f2f2f2;
-  --color-canvas: #fafafa;
-  --color-elevated: #ffffff;
-  --color-link: #0070f3;
-  --color-link-deep: #0761d1;
-  --color-error: #ee0000;
-  --color-violet: #7928ca;
-  --color-cyan: #50e3c2;
-  --color-pink: #ff0080;
-  --color-amber: #f5a623;
+  --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-mute: var(--mute);
+  --color-faint: var(--faint);
+  --color-hairline: var(--hairline);
+  --color-hairline-soft: var(--hairline-soft);
+  --color-canvas: var(--canvas);
+  --color-elevated: var(--elevated);
+  --color-link: var(--link);
+  --color-link-deep: var(--link-deep);
+  --color-link-soft: var(--link-soft);
+  --color-error: var(--error);
+  --color-violet: var(--violet);
+  --color-cyan: var(--cyan);
+  --color-pink: var(--pink);
+  --color-amber: var(--amber);
 
   --font-sans: "Geist Variable", Arial, sans-serif;
   --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -48,6 +90,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   touch-action: manipulation;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Hero mesh gradient — the only decorative element */
@@ -58,6 +101,15 @@ body {
     radial-gradient(ellipse 55% 50% at 70% 80%, rgba(255, 0, 128, 0.12), transparent 60%),
     radial-gradient(ellipse 45% 40% at 30% 90%, rgba(0, 223, 216, 0.20), transparent 60%),
     radial-gradient(ellipse 40% 35% at 95% 55%, rgba(249, 203, 40, 0.14), transparent 60%);
+}
+
+.dark .mesh-gradient {
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 20%, rgba(59, 130, 246, 0.20), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 85% 15%, rgba(167, 139, 250, 0.16), transparent 60%),
+    radial-gradient(ellipse 55% 50% at 70% 80%, rgba(251, 113, 133, 0.10), transparent 60%),
+    radial-gradient(ellipse 45% 40% at 30% 90%, rgba(45, 212, 191, 0.16), transparent 60%),
+    radial-gradient(ellipse 40% 35% at 95% 55%, rgba(251, 191, 36, 0.10), transparent 60%);
 }
 
 .num {

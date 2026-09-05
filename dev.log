@@ -15,3 +15,20 @@
 [2m11:20:04[22m [34m[vite][39m connected.
 [2m11:20:39[22m [34m[vite][39m connected.
 [2m11:20:39[22m [34m[vite][39m server restarted.
+[2m11:44:12[22m [34m[200][39m / [2m90ms[22m
+[2m11:45:22[22m [34m[200][39m / [2m10ms[22m
+[2m11:48:24[22m [34m[watch][39m /src/styles/global.css
+[2m11:48:42[22m [34m[watch][39m /src/styles/global.css
+[2m11:48:51[22m [34m[watch][39m src/components/Calculator.astro
+[2m11:48:52[22m [34m[200][39m / [2m81ms[22m
+[2m11:48:52[22m [34m[200][39m / [2m81ms[22m
+[2m11:49:08[22m [34m[watch][39m src/layouts/Layout.astro
+[2m11:49:09[22m [34m[200][39m / [2m58ms[22m
+[2m11:49:09[22m [34m[200][39m / [2m58ms[22m
+[2m11:49:19[22m [34m[watch][39m src/layouts/Layout.astro
+[2m11:49:20[22m [34m[200][39m / [2m30ms[22m
+[2m11:49:20[22m [34m[200][39m / [2m30ms[22m
+[2m11:49:34[22m [34m[watch][39m src/layouts/Layout.astro
+[2m11:49:34[22m [34m[200][39m / [2m31ms[22m
+[2m11:49:34[22m [34m[200][39m / [2m31ms[22m
+[2m11:50:11[22m [34m[200][39m / [2m5ms[22m
