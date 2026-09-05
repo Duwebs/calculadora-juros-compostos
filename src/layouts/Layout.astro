@@ -194,6 +194,15 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
         sun?.classList.toggle("hidden", !dark);
         if (meta) meta.content = dark ? "#0b0b0d" : "#fafafa";
       }
+
+      // Initialize the icon visibility to match the saved/preferred theme.
+      try {
+        const initial = localStorage.getItem("theme") || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        paint(initial);
+      } catch (e) {
+        paint("light");
+      }
+
       toggle?.addEventListener("click", () => {
         const next = document.documentElement.classList.contains("dark")
           ? "light"
