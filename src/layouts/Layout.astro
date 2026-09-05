@@ -11,6 +11,8 @@ interface Props {
 
 const { title = t.site.title, description = t.site.description } = Astro.props;
 
+const canonicalUrl = new URL("/", t.site.url).toString();
+
 const faqs = [1, 2, 3, 4, 5].map((n) => ({
   q: t.faq[`q${n}` as keyof typeof t.faq] as string,
   a: t.faq[`a${n}` as keyof typeof t.faq] as string,
@@ -23,6 +25,26 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={t.site.name} />
+    <meta property="og:title" content={t.site.ogTitle} />
+    <meta property="og:description" content={t.site.ogDescription} />
+    <meta property="og:image" content={`${t.site.url}/og-image.png`} />
+    <meta property="og:image:alt" content={t.site.name} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={t.site.twitterTitle} />
+    <meta name="twitter:description" content={t.site.twitterDescription} />
+    <meta name="twitter:image" content={`${t.site.url}/og-image.png`} />
+
     <meta name="theme-color" content="#fafafa" id="theme-color-meta" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -50,6 +72,34 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
         }
       })();
     </script>
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": `${t.site.url}/#website`,
+            url: t.site.url,
+            name: t.site.name,
+            description: t.site.description,
+            inLanguage: "pt-BR",
+            publisher: {
+              "@type": "Organization",
+              name: t.site.name,
+            },
+          },
+          {
+            "@type": "WebPage",
+            "@id": `${canonicalUrl}#webpage`,
+            url: canonicalUrl,
+            name: t.site.title,
+            isPartOf: { "@id": `${t.site.url}/#website` },
+            inLanguage: "pt-BR",
+          },
+        ],
+      })}
+    />
     <script
       type="application/ld+json"
       set:html={JSON.stringify({

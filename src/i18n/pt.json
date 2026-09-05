@@ -1,8 +1,29 @@
 {
   "site": {
     "name": "Calculadora de Juros Compostos",
-    "title": "Calculadora de Juros Compostos — Simule seu rendimento",
-    "description": "Calcule gratuitamente o rendimento dos seus investimentos com juros compostos. Simule valor inicial, aportes mensais, prazo e taxa de juros com gráfico, tabela detalhada e exportação em CSV."
+    "title": "Calculadora de Juros Compostos Diário | Simulação Gratuita",
+    "description": "Calculadora de juros compostos diário gratuita: simule rendimentos com valor inicial, aportes mensais, taxa mensal ou anual, gráfico interativo, tabela detalhada e exportação em CSV e PDF.",
+    "url": "https://calculadora-juros-compostos-ai.vercel.app",
+    "ogTitle": "Calculadora de Juros Compostos Diário — Simule seu rendimento grátis",
+    "ogDescription": "Simule gratuitamente o crescimento do seu dinheiro com juros compostos: valor inicial, aportes mensais, prazo e taxa de juros com gráfico interativo, tabela detalhada e exportação em CSV e PDF.",
+    "twitterTitle": "Calculadora de Juros Compostos Diário | Simulação Gratuita",
+    "twitterDescription": "Calculadora de juros compostos online e gratuita: simule rendimentos com aportes mensais, gráfico, tabela detalhada e exportação em CSV e PDF."
+  },
+  "seo": {
+    "eyebrow": "SOBRE A FERRAMENTA",
+    "title": "Calculadora de juros compostos diário: simule o crescimento do seu dinheiro"
+  },
+  "artigo": {
+    "p1": "A calculadora de juros compostos diário é a ferramenta ideal para quem deseja projetar o crescimento do próprio patrimônio de forma rápida, gratuita e sem cadastro. Basta informar o valor inicial, o aporte mensal, o prazo — em meses ou anos — e a taxa de juros (mensal ou anual) para ver, em segundos, quanto o seu dinheiro pode render ao longo do tempo.",
+    "p2": "Diferente da calculadora de juros simples, que incide apenas sobre o valor inicial, a nossa calculadora de juros compostos aplica o conceito de “juros sobre juros”: os rendimentos de cada período voltam a render no período seguinte. É exatamente essa capitalização composta que faz o patrimônio crescer de forma exponencial — e quanto mais cedo você começa, mais o tempo trabalha a seu favor.",
+    "p3": "A ferramenta foi pensada para diferentes perfis de investidor. Quem busca uma calculadora de juros compostos investidor sardinha encontra uma simulação direta, transparente e sem enrolação. O chamado “investidor sardinha” — aquele que prioriza consistência, aportes regulares e paciência — pode acompanhar mês a mês a evolução da sua carteira e visualizar o impacto de cada contribuição.",
+    "p4": "Da mesma forma, quem procura uma calculadora de juros compostos sardinha tem exatamente o que precisa: aporte mensal, projeção de prazo, gráfico interativo e tabela detalhada, tudo sem custo e sem necessidade de cadastro. O foco é sempre o essencial: clareza para você tomar decisões com mais confiança.",
+    "p5": "O recurso também é valioso para quem planeja operações de crédito. Uma calculadora de juros compostos financiamento ajuda a enxergar o quanto os juros pesam no custo total de um empréstimo, consórcio ou financiamento imobiliário, e a comparar diferentes cenários antes de assumir qualquer compromisso.",
+    "p6": "Uma das grandes vantagens é a conversão automática de taxas. Ao informar a taxa anual, a Calculadora de Juros Compostos Diário converte para a taxa mensal equivalente de forma composta — (1 + i)^(1/12) − 1 — em vez de usar a aproximação incorreta de dividir por 12. O resultado é um cálculo de juros compostos preciso, período após período, para apoiar decisões mais embasadas.",
+    "p7": "Além do cálculo principal, a ferramenta oferece um gráfico interativo que mostra a evolução do patrimônio e uma tabela detalhada com os juros de cada período, o aporte, o total investido e o montante acumulado, com opção de agrupar os resultados por ano. Você ainda pode exportar a simulação em CSV ou PDF para guardar, analisar ou compartilhar com a família, o contador ou o seu assessor.",
+    "p8": "Outro diferencial é que a sua simulação fica salva na URL. Isso permite compartilhar o link com outras pessoas e continuar o acompanhamento de onde parou. Tudo funciona 100% online, direto no navegador, sem precisar instalar programas — a verdadeira calculadora de juros compostos online para usar a qualquer hora, em qualquer lugar.",
+    "p9": "O que torna esta ferramenta ainda mais especial é a combinação entre taxa, prazo e regularidade. Um aporte fixo todo mês, aliado à taxa de juros e ao tempo, gera a famosa curva exponencial: nos primeiros meses o rendimento parece pequeno, mas com os anos os juros passam a superar o valor investido e o patrimônio acelera. É a prova prática do poder dos juros compostos.",
+    "p10": "Seja você um investidor iniciante ou experiente, planejando um financiamento, acompanhando o estilo “sardinha” ou buscando uma compound interest calculator investor de confiança, esta calculadora cresce junto com você. Nosso compromisso é transparência e educação financeira, sem recomendações invasivas. Comece agora: ajuste os valores na calculadora acima e veja o poder dos juros compostos a cada mês — online, grátis e sem cadastro."
   },
   "nav": {
     "calculadora": "Calculadora",
@@ -11,8 +32,8 @@
   },
   "hero": {
     "eyebrow": "CALCULADORA GRATUITA",
-    "title": "Simule o crescimento do seu dinheiro com juros compostos",
-    "subtitle": "Informe seus dados e veja, mês a mês, quanto seu patrimônio pode crescer. Gráfico interativo, tabela detalhada e exportação em CSV — sem cadastro."
+    "title": "Calculadora de juros compostos diário: simule e veja seu dinheiro crescer",
+    "subtitle": "Informe seus dados e veja, mês a mês, quanto seu patrimônio pode crescer com juros compostos. Gráfico interativo, tabela detalhada e exportação em CSV — para investidores, financiamentos e quem busca a calculadora de juros compostos online sem cadastro."
   },
   "form": {
     "title": "Simulação",
