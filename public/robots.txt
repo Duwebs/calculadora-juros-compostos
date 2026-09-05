@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow:
+
+# Sitemap
+Sitemap: https://calculadora-juros-compostos-ai.vercel.app/sitemap-index.xml

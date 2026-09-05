@@ -250,3 +250,65 @@
 [2m17:23:05[22m [34m[200][39m / [2m40ms[22m
 [2m17:23:22[22m [34m[watch][39m /src/styles/global.css
 [2m17:23:23[22m [34m[200][39m / [2m28ms[22m
+[2m17:57:54[22m Configuration file updated. Restarting...
+[2m17:57:56[22m [34m[watch][39m /src/styles/global.css
+[2m17:57:59[22m [34m[vite][39m connected.
+[2m17:58:06[22m [34m[watch][39m /src/styles/global.css
+[2m17:58:18[22m [34m[vite][39m connected.
+[2m17:58:18[22m [34m[vite][39m Re-optimizing dependencies because lockfile has changed
+[2m17:58:19[22m [34m[vite][39m server restarted.
+[2m17:58:20[22m [34m[vite][39m [optimizer] bundling dependencies...
+[2m17:58:22[22m [34m[200][39m / [2m171ms[22m
+[2m17:59:43[22m [34m[watch][39m src/layouts/Layout.astro
+[2m17:59:43[22m [34m[watch][39m src/layouts/Layout.astro
+[2m17:59:44[22m [34m[200][39m / [2m131ms[22m
+[2m18:00:08[22m [34m[watch][39m src/layouts/Layout.astro
+[2m18:00:13[22m [34m[200][39m / [2m739ms[22m
+[2m18:00:33[22m [34m[watch][39m src/layouts/Layout.astro
+[2m18:00:34[22m [34m[200][39m / [2m29ms[22m
+[2m18:00:54[22m [34m[watch][39m src/layouts/Layout.astro
+[2m18:00:55[22m [34m[200][39m / [2m39ms[22m
+[2m18:02:18[22m [34m[watch][39m src/layouts/Layout.astro
+[2m18:02:20[22m [34m[200][39m / [2m51ms[22m
+[2m18:02:43[22m Configuration file updated. Restarting...
+[2m18:02:44[22m [34m[watch][39m /src/styles/global.css
+[2m18:02:44[22m [34m[watch][39m /src/styles/global.css
+[2m18:02:44[22m [34m[vite][39m connected.
+[2m18:02:49[22m [34m[vite][39m connected.
+[2m18:02:49[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m18:02:50[22m [34m[vite][39m server restarted.
+[2m18:02:50[22m [34m[vite][39m [optimizer] bundling dependencies...
+[2m18:02:51[22m [34m[200][39m / [2m109ms[22m
+[2m18:03:14[22m Configuration file updated. Restarting...
+[2m18:03:14[22m [34m[watch][39m /src/styles/global.css
+[2m18:03:14[22m [34m[watch][39m /src/styles/global.css
+[2m18:03:14[22m [34m[vite][39m connected.
+[2m18:03:20[22m [34m[vite][39m connected.
+[2m18:03:20[22m [34m[vite][39m server restarted.
+[2m18:03:21[22m [34m[200][39m / [2m75ms[22m
+[2m18:04:10[22m Configuration file updated. Restarting...
+[2m18:04:10[22m [34m[watch][39m /src/styles/global.css
+[2m18:04:10[22m [34m[vite][39m connected.
+[2m18:04:15[22m [34m[vite][39m connected.
+[2m18:04:16[22m [34m[vite][39m server restarted.
+[2m18:04:16[22m [34m[200][39m / [2m51ms[22m
+[2m18:11:00[22m Configuration file updated. Restarting...
+[2m18:11:05[22m [34m[watch][39m /src/styles/global.css
+[2m18:11:07[22m [34m[vite][39m connected.
+[2m18:11:16[22m [34m[vite][39m connected.
+[2m18:11:16[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m18:11:16[22m [34m[vite][39m server restarted.
+[2m18:11:17[22m [34m[vite][39m [optimizer] bundling dependencies...
+[2m18:11:18[22m [34m[200][39m / [2m139ms[22m
+[2m18:11:47[22m Configuration file updated. Restarting...
+[2m18:11:47[22m [34m[watch][39m /src/styles/global.css
+[2m18:11:48[22m [34m[vite][39m connected.
+[2m18:11:54[22m [34m[vite][39m connected.
+[2m18:11:54[22m [34m[vite][39m server restarted.
+[2m18:11:56[22m [34m[200][39m / [2m142ms[22m
+[2m18:12:26[22m Configuration file updated. Restarting...
+[2m18:12:26[22m [34m[watch][39m /src/styles/global.css
+[2m18:12:27[22m [34m[vite][39m connected.
+[2m18:12:33[22m [34m[vite][39m connected.
+[2m18:12:33[22m [34m[vite][39m server restarted.
+[2m18:12:35[22m [34m[200][39m / [2m100ms[22m
