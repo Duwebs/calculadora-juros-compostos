@@ -224,15 +224,168 @@
   },
   "faq": {
     "title": "Perguntas frequentes",
-    "q1": "O que são juros compostos?",
-    "a1": "Juros compostos são juros calculados sobre o valor acumulado, incluindo os juros anteriores — os famosos \"juros sobre juros\". Diferente dos juros simples, que incidem apenas sobre o valor inicial, os compostos fazem o patrimônio crescer de forma exponencial ao longo do tempo.",
-    "q2": "Como funciona o cálculo de juros compostos?",
-    "a2": "A fórmula básica é M = C × (1 + i)^t, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período e t é o número de períodos. Com aportes mensais, soma-se o valor de cada aporte ao capital antes de aplicar a taxa do mês seguinte.",
-    "q3": "Qual a diferença entre taxa mensal e anual?",
-    "a3": "A taxa anual não é simplesmente a mensal multiplicada por 12. Como os juros se acumulam, a conversão correta é: taxa mensal = (1 + taxa anual)^(1/12) − 1. Nossa calculadora faz essa conversão automaticamente para você.",
-    "q4": "A calculadora é gratuita?",
-    "a4": "Sim, totalmente gratuita e sem necessidade de cadastro. Você também pode exportar os resultados em CSV ou PDF para guardar ou compartilhar sua simulação.",
-    "q5": "O resultado considera inflação e impostos?",
-    "a5": "Não. Os valores são nominais, ou seja, não descontam a inflação nem o Imposto de Renda. Lembre-se de que o poder de compra do montante será menor no futuro — use o resultado como referência de crescimento financeiro."
+    "subtitle": "Respostas rápidas sobre juros compostos, investimentos, financiamentos e o uso da nossa calculadora.",
+    "items": [
+      {
+        "q": "O que são juros compostos?",
+        "a": "Juros compostos são juros calculados sobre o valor acumulado, incluindo os juros anteriores — os famosos \"juros sobre juros\". Diferente dos juros simples, que incidem apenas sobre o valor inicial, os compostos fazem o patrimônio crescer de forma exponencial ao longo do tempo."
+      },
+      {
+        "q": "Como funciona o cálculo de juros compostos?",
+        "a": "A fórmula básica é M = C × (1 + i)^t, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período e t é o número de períodos. Com aportes mensais, soma-se o valor de cada aporte ao capital antes de aplicar a taxa do mês seguinte."
+      },
+      {
+        "q": "Qual a diferença entre taxa mensal e anual?",
+        "a": "A taxa anual não é simplesmente a mensal multiplicada por 12. Como os juros se acumulam, a conversão correta é: taxa mensal = (1 + taxa anual)^(1/12) − 1. Nossa calculadora faz essa conversão automaticamente para você."
+      },
+      {
+        "q": "A calculadora é gratuita?",
+        "a": "Sim, totalmente gratuita e sem necessidade de cadastro. Você também pode exportar os resultados em CSV ou PDF para guardar ou compartilhar sua simulação."
+      },
+      {
+        "q": "O resultado considera inflação e impostos?",
+        "a": "Não. Os valores são nominais, ou seja, não descontam a inflação nem o Imposto de Renda. Lembre-se de que o poder de compra do montante será menor no futuro — use o resultado como referência de crescimento financeiro."
+      },
+      {
+        "q": "Você tem uma calculadora de juros compostos diários?",
+        "a": "Sim. Nossa calculadora de juros compostos trabalha com taxas mensais e anuais e converte automaticamente entre elas. Para juros compostos diários, use a equivalência (1 + i_dia)^30 − 1 para obter a taxa mensal equivalente, ou aplica a fórmula M = C × (1 + i)^t com o prazo em dias."
+      },
+      {
+        "q": "Dá para calcular juros compostos de um financiamento?",
+        "a": "Sim. A calculadora de juros compostos financiamento permite simular o valor financiado (valor inicial), a taxa de juros e o prazo em parcelas mensais. Você visualiza o montante total, o total de juros e o impacto da taxa sobre o custo, útil para comparar empréstimos, consórcios e financiamentos."
+      },
+      {
+        "q": "A calculadora é ligada ao Me Poupe?",
+        "a": "Não. Somos uma ferramenta independente e não temos vínculo com o Me Poupe nem com qualquer marca. Nosso único objetivo é oferecer uma calculadora de juros compostos gratuita, transparente e fácil de usar para quem busca educação e planejamento financeiro."
+      },
+      {
+        "q": "A calculadora serve para calcular os rendimentos no Nubank?",
+        "a": "Sim. Use a calculadora de juros compostos Nubank para estimar o crescimento de valores guardados no Nubank, informando saldo inicial, aportes mensais, taxa ao mês e prazo. Como a rentabilidade real acompanha o CDI e varia, o resultado serve de referência."
+      },
+      {
+        "q": "A calculadora considera juros compostos mensais?",
+        "a": "Sim. A calculadora de juros compostos mensal é o foco da ferramenta: informe valor inicial, aporte mensal, taxa ao mês (ou ao ano) e prazo, e veja o crescimento mês a mês com tabela detalhada, gráfico interativo e exportação em CSV ou PDF."
+      },
+      {
+        "q": "A calculadora ajuda a entender juros compostos de dívidas na Serasa?",
+        "a": "Sim, indiretamente. A calculadora de juros compostos Serasa permite simular o crescimento de valores pela taxa de juros, ajudando a entender como uma dívida pode crescer com juros e encargos ao longo do tempo. Use como referência para negociar dívidas com mais consciência."
+      },
+      {
+        "q": "Dá para calcular os juros ao mês nesta calculadora?",
+        "a": "Sim. A calculadora de juros ao mês faz exatamente isso: insira a taxa de juros e o prazo e a ferramenta calcula o montante e os juros acumulados do período, informando quanto do resultado veio dos juros e quanto foi investido por você."
+      },
+      {
+        "q": "Como calcular juros em dias?",
+        "a": "Para juros compostos em dias, aplique M = C × (1 + i)^t com t em dias e i a taxa diária. Se tiver a taxa mensal, converta para a diária com (1 + i_dia)^30 − 1 = i_mensal e aplique por cada dia."
+      },
+      {
+        "q": "Qual site simula juros compostos?",
+        "a": "Este site simula juros compostos gratuitamente. Nossa calculadora online projeta o crescimento do investimento com valor inicial, aportes mensais, prazo e taxa de juros, com gráfico interativo, tabela mês a mês e exportação em CSV e PDF, sem cadastro."
+      },
+      {
+        "q": "Como calcular o juro de 1% ao dia?",
+        "a": "Com juros compostos de 1% ao dia, use M = C × (1,01)^dias. Por exemplo, R$ 1.000 a 1% ao dia por 30 dias rende cerca de R$ 1.347,85, ou 34,8% ao mês. Uma taxa diária de 1% se acumula muito rápido — atenção a juros de dívidas e empréstimos."
+      },
+      {
+        "q": "Como calcular juros compostos na calculadora?",
+        "a": "Use o princípio M = C × (1 + i)^t: digite o capital, a taxa e o número de períodos e aplique a exponenciação. Nossa calculadora online faz isso automaticamente — basta preencher os campos e o resultado mês a mês aparece na tela."
+      },
+      {
+        "q": "Quanto é 12% ao ano em juros compostos ao mês?",
+        "a": "12% ao ano equivalem a aproximadamente 0,9489% ao mês em juros compostos, pois a conversão correta é (1 + 0,12)^(1/12) − 1. Não é 12/12 = 1%, porque os juros se capitalizam. Nossa calculadora faz essa conversão automaticamente."
+      },
+      {
+        "q": "Quanto dá R$ 10.000 a 1% ao mês?",
+        "a": "R$ 10.000 a 1% ao mês, sem aportes, rende R$ 100 no primeiro mês e cresce por juros compostos: após 12 meses fica cerca de R$ 11.268,25 e após 24 meses cerca de R$ 12.697,35. Use a calculadora para simular outros prazos e aportes mensais."
+      },
+      {
+        "q": "Como calcular parcelas com juros compostos?",
+        "a": "Cada parcela equivale ao valor que, à taxa e no prazo, quita o saldo devedor: P = (PV × i) / (1 − (1 + i)^−n). Nossa calculadora simula valor inicial e aportes mensais, ajudando a visualizar o efeito dos juros sobre as parcelas de financiamentos."
+      },
+      {
+        "q": "Como posso simular investimentos com juros compostos?",
+        "a": "Informe o valor inicial, o aporte mensal, o prazo (em meses ou anos) e a taxa de juros (mensal ou anual). Em segundos você vê o resultado total, total investido, total de juros e a evolução do patrimônio em gráfico e tabela, exportáveis em CSV ou PDF."
+      },
+      {
+        "q": "Quanto rende R$ 100 mil em juros compostos?",
+        "a": "Depende da taxa e do prazo. Por exemplo, R$ 100.000 a 0,5% ao mês sem aportes rende cerca de R$ 106.167,78 em 12 meses; a 1% ao mês, cerca de R$ 112.682,50. Inclua aportes mensais na calculadora para ver resultados mais próximos da sua realidade."
+      },
+      {
+        "q": "Qual o melhor investimento que gera juros compostos?",
+        "a": "Todos os investimentos de renda fixa que reinvestem os rendimentos se beneficiam de juros compostos, como Tesouro Direto, CDB, LCI/LCA e fundos que capitalizam os juros. Não existe um \"melhor\" universal: depende do seu perfil, prazo e objetivo. Nossa calculadora ajuda a comparar cenários e projetar o crescimento do patrimônio."
+      },
+      {
+        "q": "Quanto investir para receber R$ 5.000 por mês em dividendos?",
+        "a": "O capital necessário depende do rendimento médio da carteira. Se ela render 10% ao ano, por exemplo, você precisaria de cerca de R$ 600.000 para gerar R$ 5.000 mensais. Nossa calculadora é ideal para simular como juntar esse capital ao longo do tempo com aportes mensais e juros compostos."
+      },
+      {
+        "q": "Quanto dá R$ 100.000 no CDB por mês?",
+        "a": "Um CDB que pague 100% do CDI hoje rende, aproximadamente, de R$ 800 a R$ 900 no primeiro mês sobre R$ 100.000, conforme a taxa vigente. Como os juros são compostos, o rendimento mensal cresce ao longo do tempo. Consulte a rentabilidade atual e simule com nossa calculadora."
+      },
+      {
+        "q": "Qual banco rende juros compostos?",
+        "a": "Praticamente todos os bancos aplicam juros compostos sobre aplicações de renda fixa, como CDB, poupança e LCI. A diferença está na rentabilidade oferecida, como o percentual do CDI. Use a calculadora para comparar cenários e ver quanto seu dinheiro renderia em cada opção."
+      },
+      {
+        "q": "Qual investimento paga 1% ao mês?",
+        "a": "Investimentos de renda fixa com boa rentabilidade, como alguns CDBs, LCIs e fundos que acompanham o CDI, podem se aproximar de 1% ao mês em períodos de juros altos, dependendo do percentual contratado. Quanto maior o CDI, mais fácil encontrar taxas próximas ou acima de 1% ao mês."
+      },
+      {
+        "q": "Como juntar R$ 100 mil em 5 anos?",
+        "a": "Para juntar R$ 100.000 em 60 meses, informe o prazo na calculadora e teste o aporte mensal necessário para cada taxa. Sem rendimento, seriam cerca de R$ 1.666 por mês; com juros compostos a 0,8% ao mês, o valor cai para perto de R$ 1.300. Aportes regulares fazem grande diferença."
+      },
+      {
+        "q": "Quanto rende R$ 50.000 no Mercado Pago por mês?",
+        "a": "O rendimento no Mercado Pago acompanha o CDI e varia conforme a taxa vigente, tipicamente entre 100% e 105% do CDI. Com o CDI em cerca de 0,8% ao mês, seriam aproximadamente R$ 400 a R$ 420 por mês. Como os juros são compostos, o valor tende a crescer mês a mês."
+      },
+      {
+        "q": "Qual banco paga 120% do CDI?",
+        "a": "Alguns bancos digitais e corretoras oferecem CDBs que pagam 120% do CDI, geralmente em promoções ou com prazos e limites mínimos. Como o percentual muda com frequência, é importante comparar as ofertas vigentes. Nossa calculadora ajuda a projetar o rendimento de qualquer taxa informada."
+      },
+      {
+        "q": "Quanto rende R$ 50.000 no Nubank por mês?",
+        "a": "O dinheiro no Nubank rende 100% do CDI, seguindo a taxa vigente do mercado. Com o CDI em cerca de 0,8% ao mês, R$ 50.000 renderiam aproximadamente R$ 400 no primeiro mês. Por serem juros compostos, o rendimento mensal cresce ao longo do tempo."
+      },
+      {
+        "q": "Quanto rende R$ 1 bilhão por mês?",
+        "a": "R$ 1 bilhão aplicado a 1% ao mês renderia R$ 10 milhões no primeiro mês. Em juros compostos, esse valor cresce de forma exponencial. É um cenário teórico, mas serve para entender como a taxa e o tempo multiplicam patrimônios muito grandes. Use a calculadora para simular grandes valores."
+      },
+      {
+        "q": "Quanto rende R$ 1.000.000 no Nubank?",
+        "a": "R$ 1.000.000 no Nubank, que rende 100% do CDI, renderia cerca de R$ 8.000 por mês se o CDI estiver em 0,8% ao mês. Como os juros são compostos, o montante cresce ao longo do tempo e o rendimento mensal aumenta. A rentabilidade real acompanha o CDI, que varia."
+      },
+      {
+        "q": "É possível viver de renda com R$ 1 milhão?",
+        "a": "Depende do padrão de vida e da rentabilidade. Com R$ 1 milhão rendendo, por exemplo, 0,7% ao mês, você teria cerca de R$ 7.000 mensais antes de impostos. A sustentabilidade depende do rendimento comparado à inflação e do quanto é retirado. Nossa calculadora ajuda a projetar esse cenário."
+      },
+      {
+        "q": "Quanto rende R$ 3 bilhões na poupança?",
+        "a": "A poupança rende cerca de 0,5% ao mês quando a Selic está acima de 8,5%. Sobre R$ 3 bilhões, isso representaria aproximadamente R$ 15 milhões por mês. É um cenário teórico, mas mostra como uma taxa mensal, mesmo pequena, gera valores enormes em patrimônios grandes."
+      },
+      {
+        "q": "Quanto rende R$ 10 bilhões na poupança?",
+        "a": "Sobre R$ 10 bilhões, o rendimento da poupança a aproximadamente 0,5% ao mês seria de cerca de R$ 50 milhões por mês. É um valor teórico, mas ilustra o poder da capitalização composta aplicado a patrimônios muito elevados, sempre descontando a inflação para o ganho real."
+      },
+      {
+        "q": "Quanto rende R$ 2 milhões na poupança da Caixa por mês?",
+        "a": "R$ 2 milhões na poupança da Caixa, com rendimento de cerca de 0,5% ao mês, renderiam aproximadamente R$ 10.000 no primeiro mês. Como os juros são compostos, o valor e o rendimento crescem com o tempo, embora a inflação precise ser considerada no ganho real."
+      },
+      {
+        "q": "Quanto rende R$ 3 milhões no CDI hoje?",
+        "a": "R$ 3 milhões aplicados a 100% do CDI, com o CDI em cerca de 0,8% ao mês, renderiam aproximadamente R$ 24.000 no primeiro mês. Como o CDI varia diariamente, o valor exato muda, e os juros compostos fazem o rendimento crescer mês a mês."
+      },
+      {
+        "q": "Quanto é 15% ao ano em mensal?",
+        "a": "15% ao ano equivalem a aproximadamente 1,1715% ao mês em juros compostos, pois a conversão correta é (1,15)^(1/12) − 1. Não se divide 15 por 12, o que daria 1,25% incorretamente, porque a capitalização composta exige a raiz de índice 12."
+      },
+      {
+        "q": "Qual é a fórmula para calcular juros compostos?",
+        "a": "A fórmula fundamental é M = C × (1 + i)^t, em que M é o montante final, C é o capital inicial, i é a taxa de juros por período e t é o número de períodos. Com aportes mensais, cada aporte é somado ao capital antes de aplicar a taxa do período seguinte."
+      },
+      {
+        "q": "Como converter juros compostos anual para mensal?",
+        "a": "Para converter a taxa anual em mensal com juros compostos, use: taxa mensal = (1 + taxa anual)^(1/12) − 1. Por exemplo, 12% ao ano dão cerca de 0,9489% ao mês. Nossa calculadora faz essa conversão automaticamente quando você informa a taxa anual."
+      }
+    ]
   }
 }

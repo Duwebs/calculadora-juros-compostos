@@ -237,3 +237,16 @@
 [2m16:45:13[22m [34m[watch][39m /src/styles/global.css
 [2m16:46:41[22m [34m[watch][39m /src/styles/global.css
 [2m16:46:42[22m [34m[watch][39m /src/styles/global.css
+[2m17:21:45[22m [34m[watch][39m /src/styles/global.css
+[2m17:21:48[22m [34m[200][39m / [2m205ms[22m
+[2m17:21:52[22m [34m[watch][39m /src/styles/global.css
+[2m17:22:07[22m [34m[watch][39m src/layouts/Layout.astro
+[2m17:22:08[22m [34m[200][39m / [2m56ms[22m
+[2m17:22:36[22m [34m[watch][39m src/layouts/Layout.astro
+[2m17:22:37[22m [34m[200][39m / [2m36ms[22m
+[2m17:22:48[22m [34m[watch][39m src/layouts/Layout.astro
+[2m17:22:49[22m [34m[200][39m / [2m29ms[22m
+[2m17:23:04[22m [34m[watch][39m /src/styles/global.css
+[2m17:23:05[22m [34m[200][39m / [2m40ms[22m
+[2m17:23:22[22m [34m[watch][39m /src/styles/global.css
+[2m17:23:23[22m [34m[200][39m / [2m28ms[22m

@@ -10,6 +10,7 @@ interface Props {
   ogTitle?: string;
   ogDescription?: string;
   noindex?: boolean;
+  includeFaq?: boolean;
 }
 
 const {
@@ -18,14 +19,12 @@ const {
   ogTitle = t.site.ogTitle,
   ogDescription = t.site.ogDescription,
   noindex = false,
+  includeFaq = false,
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, t.site.url).toString();
 
-const faqs = [1, 2, 3, 4, 5].map((n) => ({
-  q: t.faq[`q${n}` as keyof typeof t.faq] as string,
-  a: t.faq[`a${n}` as keyof typeof t.faq] as string,
-}));
+const faqs = t.faq.items;
 ---
 
 <!doctype html>
@@ -112,18 +111,20 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
         ],
       })}
     />
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      })}
-    />
+    {includeFaq && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        })}
+      />
+    )}
   </head>
   <body class="min-h-screen">
     <a
