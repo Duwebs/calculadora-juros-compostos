@@ -58,6 +58,18 @@ const faqs = t.faq.items;
     <meta name="twitter:image" content={`${t.site.url}/og-image.png`} />
 
     <meta name="theme-color" content="#fafafa" id="theme-color-meta" />
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-32GNKEE8Q0"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-32GNKEE8Q0');
+    </script>
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
