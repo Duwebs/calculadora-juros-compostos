@@ -151,6 +151,25 @@
       ]
     }
   },
+  "errors": {
+    "notFound": {
+      "code": "404",
+      "title": "Página não encontrada | Calculadora de Juros Compostos",
+      "description": "A página que você procura não foi encontrada. Volte para a Calculadora de Juros Compostos e continue simulando seus investimentos.",
+      "h1": "Página não encontrada",
+      "body": "O endereço que você acessou não existe ou foi movido para outro lugar. Que tal voltar para a calculadora de juros compostos e continuar explorando o crescimento do seu dinheiro?",
+      "ctaHome": "Voltar para a calculadora",
+      "ctaContato": "Fale conosco"
+    },
+    "internalError": {
+      "code": "500",
+      "title": "Erro interno | Calculadora de Juros Compostos",
+      "description": "Ocorreu um erro inesperado ao carregar a página. Tente novamente ou volte para a Calculadora de Juros Compostos.",
+      "h1": "Algo deu errado",
+      "body": "Ocorreu um erro inesperado ao processar sua solicitação. Isso é raro, mas acontece. Tente novamente em alguns instantes ou volte para a calculadora.",
+      "ctaHome": "Voltar para a calculadora"
+    }
+  },
   "hero": {
     "eyebrow": "CALCULADORA GRATUITA",
     "title": "Calculadora de juros compostos diário: simule e veja seu dinheiro crescer",

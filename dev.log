@@ -228,3 +228,12 @@
 [2m16:32:11[22m [34m[200][39m / [2m83ms[22m
 [2m16:37:11[22m [34m[watch][39m /src/styles/global.css
 [2m16:37:12[22m [34m[200][39m / [2m37ms[22m
+[2m16:42:36[22m [34m[watch][39m /src/styles/global.css
+[2m16:42:39[22m [34m[200][39m / [2m264ms[22m
+[2m16:44:04[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:44:04[22m [34m[200][39m / [2m58ms[22m
+[2m16:44:23[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:44:26[22m [34m[200][39m / [2m286ms[22m
+[2m16:45:13[22m [34m[watch][39m /src/styles/global.css
+[2m16:46:41[22m [34m[watch][39m /src/styles/global.css
+[2m16:46:42[22m [34m[watch][39m /src/styles/global.css

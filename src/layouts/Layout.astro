@@ -9,6 +9,7 @@ interface Props {
   description?: string;
   ogTitle?: string;
   ogDescription?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   description = t.site.description,
   ogTitle = t.site.ogTitle,
   ogDescription = t.site.ogDescription,
+  noindex = false,
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, t.site.url).toString();
@@ -32,6 +34,9 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    {noindex && (
+      <meta name="robots" content="noindex, nofollow, noarchive" />
+    )}
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph -->
