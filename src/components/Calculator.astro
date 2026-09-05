@@ -4,11 +4,11 @@ import t from "../i18n/pt.json";
 
 <section
   id="calculadora"
-  class="mx-auto w-full max-w-6xl px-6"
+  class="mx-auto w-full max-w-6xl px-4 sm:px-6"
   aria-label="Calculadora de juros compostos"
 >
   <div
-    class="grid gap-6 rounded-lg border border-hairline bg-elevated p-6 shadow-[0_1px_1px_rgba(0,0,0,0.04)] lg:grid-cols-[380px_1fr]"
+    class="grid gap-6 rounded-lg border border-hairline bg-elevated p-4 shadow-[0_1px_1px_rgba(0,0,0,0.04)] sm:p-6 lg:grid-cols-[380px_1fr]"
   >
     <!-- Inputs -->
     <form id="calc-form" class="space-y-5" autocomplete="off" novalidate>
@@ -34,7 +34,7 @@ import t from "../i18n/pt.json";
             name="valor-inicial"
             inputmode="decimal"
             placeholder="1.000,00…"
-            class="w-full bg-transparent px-2 py-2 text-sm text-ink outline-none placeholder:text-faint"
+            class="w-full bg-transparent px-2 py-2 text-base text-ink outline-none placeholder:text-faint sm:text-sm"
           />
         </div>
       </div>
@@ -57,7 +57,7 @@ import t from "../i18n/pt.json";
             name="aporte-mensal"
             inputmode="decimal"
             placeholder="200,00…"
-            class="w-full bg-transparent px-2 py-2 text-sm text-ink outline-none placeholder:text-faint"
+            class="w-full bg-transparent px-2 py-2 text-base text-ink outline-none placeholder:text-faint sm:text-sm"
           />
         </div>
       </div>
@@ -73,7 +73,7 @@ import t from "../i18n/pt.json";
             name="prazo"
             inputmode="numeric"
             placeholder="10…"
-            class="w-full min-w-0 rounded-sm border border-hairline bg-elevated px-3 py-2 text-sm text-ink outline-none transition-colors placeholder:text-faint focus:border-link focus:ring-2 focus:ring-link/30"
+            class="w-full min-w-0 rounded-sm border border-hairline bg-elevated px-3 py-2 text-base text-ink outline-none transition-colors placeholder:text-faint focus:border-link focus:ring-2 focus:ring-link/30 sm:text-sm"
           />
           <div
             class="flex shrink-0 rounded-sm border border-hairline p-0.5"
@@ -83,13 +83,13 @@ import t from "../i18n/pt.json";
             <button
               type="button"
               id="prazo-anos"
-              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              class="seg-btn rounded-[4px] px-3 py-2 text-sm font-medium transition-colors"
               aria-pressed="true">Anos</button
             >
             <button
               type="button"
               id="prazo-meses"
-              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              class="seg-btn rounded-[4px] px-3 py-2 text-sm font-medium transition-colors"
               aria-pressed="false">Meses</button
             >
           </div>
@@ -100,9 +100,9 @@ import t from "../i18n/pt.json";
         <label for="taxa" class="block text-sm font-medium text-ink"
           >Taxa de juros</label
         >
-        <div class="mt-1.5 flex gap-2">
+        <div class="mt-1.5 flex flex-wrap gap-2">
           <div
-            class="flex w-full min-w-0 items-center rounded-sm border border-hairline bg-elevated transition-colors focus-within:border-link focus-within:ring-2 focus-within:ring-link/30"
+            class="flex w-full min-w-0 flex-1 items-center rounded-sm border border-hairline bg-elevated transition-colors focus-within:border-link focus-within:ring-2 focus-within:ring-link/30"
           >
             <input
               type="text"
@@ -110,7 +110,7 @@ import t from "../i18n/pt.json";
               name="taxa"
               inputmode="decimal"
               placeholder="10,5…"
-              class="w-full bg-transparent px-3 py-2 text-sm text-ink outline-none placeholder:text-faint"
+              class="w-full bg-transparent px-3 py-2 text-base text-ink outline-none placeholder:text-faint sm:text-sm"
             />
             <span
               class="pr-3 text-sm text-mute select-none"
@@ -125,13 +125,13 @@ import t from "../i18n/pt.json";
             <button
               type="button"
               id="taxa-anual"
-              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              class="seg-btn rounded-[4px] px-3 py-2 text-sm font-medium transition-colors"
               aria-pressed="true">Anual</button
             >
             <button
               type="button"
               id="taxa-mensal"
-              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              class="seg-btn rounded-[4px] px-3 py-2 text-sm font-medium transition-colors"
               aria-pressed="false">Mensal</button
             >
           </div>
@@ -183,7 +183,7 @@ import t from "../i18n/pt.json";
 
       <!-- Chart -->
       <div class="rounded-md border border-hairline bg-elevated p-4">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-wrap items-center justify-between gap-2">
           <h3 class="text-sm font-semibold text-ink">{t.chart.title}</h3>
           <div class="flex items-center gap-4 text-xs text-body">
             <span class="flex items-center gap-1.5">
@@ -219,35 +219,35 @@ import t from "../i18n/pt.json";
   <!-- Table -->
   <div
     id="tabela"
-    class="mt-6 rounded-lg border border-hairline bg-elevated p-6 shadow-[0_1px_1px_rgba(0,0,0,0.04)]"
+    class="mt-6 rounded-lg border border-hairline bg-elevated p-4 shadow-[0_1px_1px_rgba(0,0,0,0.04)] sm:p-6"
   >
     <div class="flex flex-wrap items-center justify-between gap-3">
       <h3 class="text-lg font-semibold tracking-tight text-ink">
         {t.table.title}
       </h3>
-      <div class="no-print flex items-center gap-2">
+      <div class="no-print mt-4 flex w-full flex-col gap-2 sm:mt-0 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
         <button
           type="button"
           id="btn-group"
-          class="rounded-sm border border-hairline bg-elevated px-3 py-1.5 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none"
+          class="w-full rounded-sm border border-hairline bg-elevated px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none sm:w-auto sm:py-1.5"
           aria-pressed="true">{t.table.agruparAno}</button
         >
         <button
           type="button"
           id="btn-csv"
-          class="rounded-sm border border-hairline bg-elevated px-3 py-1.5 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none"
+          class="w-full rounded-sm border border-hairline bg-elevated px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none sm:w-auto sm:py-1.5"
           >Exportar CSV</button
         >
         <button
           type="button"
           id="btn-pdf"
-          class="rounded-sm bg-ink px-3 py-1.5 text-sm font-medium text-elevated transition-colors hover:opacity-90 focus-visible:ring-2 focus-visible:ring-link focus-visible:ring-offset-2 focus-visible:outline-none"
+          class="w-full rounded-sm bg-ink px-3 py-2 text-sm font-medium text-elevated transition-colors hover:opacity-90 focus-visible:ring-2 focus-visible:ring-link focus-visible:ring-offset-2 focus-visible:outline-none sm:w-auto sm:py-1.5"
           >Exportar PDF</button
         >
       </div>
     </div>
     <div class="mt-4 max-h-96 overflow-auto rounded-md border border-hairline">
-      <table class="num w-full text-right text-sm">
+      <table class="num w-full min-w-[620px] text-right text-sm">
         <thead
           class="sticky top-0 bg-hairline-soft text-left font-mono text-xs text-mute uppercase"
         >

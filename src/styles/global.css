@@ -68,6 +68,13 @@
   --radius-pill: 100px;
 }
 
+[id="calculadora"],
+[id="tabela"],
+[id="como-funciona"],
+[id="perguntas"] {
+  scroll-margin-top: 88px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -90,6 +97,8 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: clip;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
