@@ -192,3 +192,37 @@
 [2m15:25:14[22m [34m[vite][39m connected.
 [2m15:25:14[22m [34m[vite][39m server restarted.
 [2m15:25:15[22m [34m[200][39m / [2m67ms[22m
+[2m16:24:44[22m [34m[watch][39m /src/styles/global.css
+[31m[1m16:24:51[22m [ERROR][39m EOF while parsing an object at line 143 column 0
+  [1mStack trace:[22m
+[2m    at [object Object]
+    [...] See full stack trace in the browser, or rerun with --verbose.[22m
+[2m16:24:56[22m [34m[watch][39m /src/styles/global.css
+[31m[1m16:24:57[22m [ERROR][39m EOF while parsing an object at line 184 column 0
+  [1mStack trace:[22m
+[2m    at [object Object]
+    [...] See full stack trace in the browser, or rerun with --verbose.[22m
+[31m[1m16:24:59[22m [ERROR][39m EOF while parsing an object at line 184 column 0
+  [1mStack trace:[22m
+[2m    at [object Object]
+    [...] See full stack trace in the browser, or rerun with --verbose.[22m
+[2m16:25:24[22m [34m[watch][39m /src/styles/global.css
+[2m16:25:27[22m [34m[200][39m / [2m935ms[22m
+[2m16:25:27[22m [34m[200][39m / [2m929ms[22m
+[2m16:25:27[22m [34m[200][39m / [2m803ms[22m
+[2m16:25:53[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:25:55[22m [34m[200][39m / [2m102ms[22m
+[2m16:26:02[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:26:03[22m [34m[200][39m / [2m173ms[22m
+[2m16:26:12[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:26:12[22m [34m[200][39m / [2m43ms[22m
+[2m16:26:24[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:26:25[22m [34m[200][39m / [2m277ms[22m
+[2m16:30:48[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:30:48[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:30:55[22m [34m[200][39m / [2m1082ms[22m
+[2m16:30:55[22m [34m[200][39m / [2m1081ms[22m
+[2m16:31:12[22m [34m[watch][39m src/layouts/Layout.astro
+[2m16:31:13[22m [34m[200][39m / [2m62ms[22m
+[2m16:32:10[22m [34m[watch][39m /src/styles/global.css
+[2m16:32:11[22m [34m[200][39m / [2m83ms[22m

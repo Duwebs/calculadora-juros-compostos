@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import t from "../i18n/pt.json";
+
+const meta = t.pages.privacidade;
+---
+
+<Layout
+  title={meta.title}
+  description={meta.description}
+  ogTitle={meta.title}
+  ogDescription={meta.description}
+>
+  <section class="mx-auto max-w-3xl px-6 py-20">
+    <p class="font-mono text-xs tracking-wide text-body uppercase">
+      Política de Privacidade
+    </p>
+    <h1
+      class="mt-4 text-4xl font-semibold tracking-tight text-balance text-ink sm:text-5xl"
+    >
+      {meta.h1}
+    </h1>
+    <p class="mt-5 text-sm text-mute">{meta.updated}</p>
+    <p class="mt-6 text-pretty text-base leading-relaxed text-body">
+      {meta.intro}
+    </p>
+    <div class="mt-10 space-y-8">
+      {
+        meta.sections.map((s) => (
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight text-ink">
+              {s.heading}
+            </h2>
+            <p class="mt-2 text-[0.95rem] leading-relaxed text-body">
+              {s.body}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

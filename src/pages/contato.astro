@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import t from "../i18n/pt.json";
+
+const meta = t.pages.contato;
+---
+
+<Layout
+  title={meta.title}
+  description={meta.description}
+  ogTitle={meta.title}
+  ogDescription={meta.description}
+>
+  <section class="mx-auto max-w-3xl px-6 py-20">
+    <p class="font-mono text-xs tracking-wide text-body uppercase">
+      Contato
+    </p>
+    <h1
+      class="mt-4 text-4xl font-semibold tracking-tight text-balance text-ink sm:text-5xl"
+    >
+      {meta.h1}
+    </h1>
+    <p class="mt-6 text-pretty text-base leading-relaxed text-body">
+      {meta.intro}
+    </p>
+
+    <div class="mt-8 rounded-md border border-hairline bg-elevated p-6">
+      <p class="text-sm font-medium text-ink">{meta.emailLabel}</p>
+      <a
+        href={`mailto:${meta.email}`}
+        class="mt-1 inline-flex items-center text-base font-semibold text-link underline underline-offset-4 transition-opacity hover:opacity-80"
+      >
+        {meta.email}
+      </a>
+      <div class="mt-5 border-t border-hairline pt-5">
+        <a
+          href={`mailto:${meta.email}`}
+          class="inline-flex rounded-md bg-ink px-5 py-2.5 text-sm font-medium text-canvas transition-opacity hover:opacity-90"
+        >
+          Enviar e-mail
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-10 space-y-8">
+      {
+        meta.sections.map((s) => (
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight text-ink">
+              {s.heading}
+            </h2>
+            <p class="mt-2 text-[0.95rem] leading-relaxed text-body">
+              {s.body}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

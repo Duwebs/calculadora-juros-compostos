@@ -30,6 +30,127 @@
     "como-funciona": "Como funciona",
     "perguntas": "Perguntas frequentes"
   },
+  "pages": {
+    "nav": {
+      "sobre": "Sobre",
+      "contato": "Contato",
+      "privacidade": "Privacidade",
+      "termos": "Termos"
+    },
+    "privacidade": {
+      "title": "Política de Privacidade | Calculadora de Juros Compostos",
+      "description": "Saiba como a Calculadora de Juros Compostos coleta, usa e protege seus dados: cálculos locais no navegador, cookies de preferência e nenhuma venda de informações.",
+      "h1": "Política de Privacidade",
+      "intro": "A sua privacidade é importante para nós. Esta Política descreve, de forma simples e transparente, como a Calculadora de Juros Compostos coleta, utiliza e protege as informações quando você acessa o site.",
+      "updated": "Última atualização: 2026",
+      "sections": [
+        {
+          "heading": "Coleta de informações",
+          "body": "Esta ferramenta é uma calculadora online gratuita. Todo o cálculo é realizado diretamente no seu navegador, e os dados que você informa (valor inicial, aporte mensal, prazo e taxa de juros) não são enviados nem armazenados em nossos servidores. A sua simulação pode ficar salva na própria URL para facilitar o compartilhamento, mas isso acontece de forma local, no seu dispositivo."
+        },
+        {
+          "heading": "Dados de navegação",
+          "body": "Como a maioria dos sites, podemos coletar dados de navegação anônimos por meio de ferramentas de análise e registros de servidor, como endereço IP, tipo de navegador, páginas visitadas e tempo de permanência. Esses dados são usados exclusivamente para melhorar a experiência do usuário e a qualidade do serviço, de forma agregada e sem identificação pessoal."
+        },
+        {
+          "heading": "Cookies e preferências",
+          "body": "Utilizamos cookies e tecnologias semelhantes para lembrar preferências, como o tema claro ou escuro do site, e para entender como a ferramenta é usada. Você pode gerenciar ou desativar os cookies nas configurações do seu navegador a qualquer momento, sem prejuízo do funcionamento da calculadora."
+        },
+        {
+          "heading": "Compartilhamento de informações",
+          "body": "Não vendemos, alugamos nem compartilhamos seus dados pessoais com terceiros para fins publicitários. Apenas fornecedores essenciais para a operação do serviço, como provedores de hospedagem, podem ter acesso limitado às informações, e somente quando necessário, sempre em conformidade com a legislação aplicável."
+        },
+        {
+          "heading": "Links de terceiros",
+          "body": "O site pode conter links para páginas externas. Não nos responsabilizamos pelas práticas de privacidade de outros sites. Recomendamos a leitura das políticas de privacidade de cada página visitada."
+        },
+        {
+          "heading": "Alterações nesta política",
+          "body": "Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças no serviço ou na legislação. As alterações serão publicadas nesta página, e o uso continuado do site após as atualizações implica a aceitação da versão revisada."
+        },
+        {
+          "heading": "Contato",
+          "body": "Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento dos seus dados, utilize a página de Contato. Responderemos o mais breve possível."
+        }
+      ]
+    },
+    "termos": {
+      "title": "Termos de Uso | Calculadora de Juros Compostos",
+      "description": "Termos de uso da Calculadora de Juros Compostos: ferramenta gratuita e informativa para simular investimentos, com resultados sem caráter de recomendação financeira.",
+      "h1": "Termos de Uso",
+      "intro": "Bem-vindo(a) à Calculadora de Juros Compostos. Ao acessar e utilizar este site, você concorda com os termos descritos abaixo. Se não concordar com algum deles, recomendamos não utilizar o serviço.",
+      "updated": "Última atualização: 2026",
+      "sections": [
+        {
+          "heading": "Objetivo do serviço",
+          "body": "A calculadora é uma ferramenta gratuita e informativa que permite projetar o crescimento de investimentos com juros compostos a partir dos dados informados pelo usuário, como valor inicial, aporte mensal, prazo e taxa de juros."
+        },
+        {
+          "heading": "Natureza informativa",
+          "body": "Os resultados apresentados têm caráter meramente informativo e educativo. Eles não constituem recomendação, oferta ou aconselhamento de investimento, crédito ou qualquer operação financeira. Consulte sempre um profissional devidamente qualificado antes de tomar decisões financeiras."
+        },
+        {
+          "heading": "Precisão dos resultados",
+          "body": "Embora busquemos a máxima precisão nos cálculos, os valores podem apresentar diferenças em relação aos cálculos oficiais ou às condições reais de cada instituição financeira, incluindo taxas, impostos, inflação e tarifas. Utilize os resultados como referência para o seu planejamento."
+        },
+        {
+          "heading": "Uso permitido",
+          "body": "Você pode utilizar o site para fins pessoais e não comerciais. É proibido tentar danificar, sobrecarregar, explorar vulnerabilidades ou comprometer o funcionamento da plataforma, bem como utilizar o conteúdo para fins ilícitos."
+        },
+        {
+          "heading": "Propriedade intelectual",
+          "body": "Todo o conteúdo, design, logotipos e código do site são protegidos por direitos de propriedade intelectual. A reprodução sem autorização é proibida, exceto para uso pessoal e educativo com a devida menção da fonte."
+        },
+        {
+          "heading": "Limitação de responsabilidade",
+          "body": "Não nos responsabilizamos por eventuais perdas ou danos decorrentes do uso das informações disponibilizadas, incluindo decisões de investimento tomadas com base nos resultados da calculadora. O uso da ferramenta é de inteira responsabilidade do usuário."
+        },
+        {
+          "heading": "Alterações dos termos",
+          "body": "Estes Termos de Uso podem ser alterados a qualquer momento, sem aviso prévio. Recomendamos revisar esta página periodicamente para se manter informado sobre as condições vigentes."
+        },
+        {
+          "heading": "Contato",
+          "body": "Para dúvidas sobre estes termos, entre em contato pela página de Contato."
+        }
+      ]
+    },
+    "sobre": {
+      "title": "Sobre Nós | Calculadora de Juros Compostos",
+      "description": "Conheça a história e a missão da Calculadora de Juros Compostos: educação financeira acessível e transparente para simular investimentos, aportes e financiamentos.",
+      "h1": "Sobre Nós",
+      "intro": "A Calculadora de Juros Compostos nasceu com um objetivo simples: facilitar o entendimento do poder dos juros compostos para qualquer pessoa, de forma gratuita, rápida e sem complicação.",
+      "paragraphs": [
+        "Acreditamos que educação financeira é a base para decisões mais conscientes e seguras. Por isso, criamos uma ferramenta acessível que permite simular o crescimento do patrimônio com valor inicial, aportes mensais, prazo e taxa de juros — seja para investidores iniciantes, para quem acompanha o estilo do chamado investidor sardinha, ou para quem planeja um financiamento e deseja entender o impacto dos juros.",
+        "A calculadora oferece gráfico interativo, tabela detalhada com o resultado mês a mês, conversão automática entre taxas mensais e anuais e exportação em CSV e PDF. Tudo em uma experiência 100% online, sem cadastro e sem custo.",
+        "Nosso compromisso é com a transparência e a clareza: mostramos o impacto dos juros, dos aportes e do tempo, para que você veja exatamente como o seu dinheiro pode crescer ao longo dos anos. Queremos que qualquer pessoa entenda, na prática, que o tempo e a consistência são grandes aliados dos investimentos.",
+        "Somos um projeto independente e educacional. As informações aqui apresentadas não constituem recomendação de investimento, e recomendamos consultar sempre profissionais qualificados antes de tomar decisões financeiras importantes.",
+        "Dúvidas, sugestões ou parcerias? Fale conosco pela página de Contato. Teremos prazer em ouvir você."
+      ]
+    },
+    "contato": {
+      "title": "Contato | Calculadora de Juros Compostos",
+      "description": "Entre em contato com a equipe da Calculadora de Juros Compostos para dúvidas, sugestões, correções e parcerias. Respondemos em até 2 dias úteis.",
+      "h1": "Contato",
+      "intro": "Tem uma dúvida, sugestão ou encontrou algum problema? Ficaremos felizes em ajudar. Utilize os canais abaixo e responderemos normalmente em até 2 dias úteis.",
+      "emailLabel": "E-mail",
+      "email": "contato@calculadora-juros-compostos-ai.vercel.app",
+      "sections": [
+        {
+          "heading": "Como podemos ajudar",
+          "body": "Envie sua mensagem pelo e-mail abaixo e nos conte como podemos ajudar: dúvidas sobre o funcionamento da calculadora, sugestões de melhorias, correção de erros de cálculo, parcerias ou qualquer outra questão. Procure ser o mais detalhado possível para agilizar a resposta."
+        },
+        {
+          "heading": "Tempo de resposta",
+          "body": "Nosso objetivo é responder todas as mensagens em até 2 dias úteis. Em períodos de maior volume, esse prazo pode ser um pouco maior — agradecemos pela compreensão."
+        },
+        {
+          "heading": "Sua privacidade",
+          "body": "As informações enviadas por e-mail são usadas exclusivamente para responder à sua solicitação e não são compartilhadas com terceiros, em conformidade com nossa Política de Privacidade."
+        }
+      ]
+    }
+  },
   "hero": {
     "eyebrow": "CALCULADORA GRATUITA",
     "title": "Calculadora de juros compostos diário: simule e veja seu dinheiro crescer",

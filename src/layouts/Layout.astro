@@ -7,11 +7,18 @@ import t from "../i18n/pt.json";
 interface Props {
   title?: string;
   description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
-const { title = t.site.title, description = t.site.description } = Astro.props;
+const {
+  title = t.site.title,
+  description = t.site.description,
+  ogTitle = t.site.ogTitle,
+  ogDescription = t.site.ogDescription,
+} = Astro.props;
 
-const canonicalUrl = new URL("/", t.site.url).toString();
+const canonicalUrl = new URL(Astro.url.pathname, t.site.url).toString();
 
 const faqs = [1, 2, 3, 4, 5].map((n) => ({
   q: t.faq[`q${n}` as keyof typeof t.faq] as string,
@@ -31,8 +38,8 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content={t.site.name} />
-    <meta property="og:title" content={t.site.ogTitle} />
-    <meta property="og:description" content={t.site.ogDescription} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
     <meta property="og:image" content={`${t.site.url}/og-image.png`} />
     <meta property="og:image:alt" content={t.site.name} />
     <meta property="og:image:width" content="1200" />
@@ -93,7 +100,7 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
             "@type": "WebPage",
             "@id": `${canonicalUrl}#webpage`,
             url: canonicalUrl,
-            name: t.site.title,
+            name: title,
             isPartOf: { "@id": `${t.site.url}/#website` },
             inLanguage: "pt-BR",
           },
@@ -138,14 +145,22 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
         </a>
         <div class="flex items-center gap-1 text-sm">
           <a
-            href="#como-funciona"
-            class="hidden rounded-full px-3 py-2 text-body transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none sm:block">Como funciona</a
+            href="/sobre/"
+            class="hidden rounded-full px-3 py-2 text-body transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none md:block">{t.pages.nav.sobre}</a
           >
           <a
-            href="#perguntas"
-            class="hidden rounded-full px-3 py-2 text-body transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none sm:block">Perguntas frequentes</a
+            href="/contato/"
+            class="hidden rounded-full px-3 py-2 text-body transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none md:block">{t.pages.nav.contato}</a
           >
-          <span class="mx-1 hidden h-5 w-px bg-hairline sm:block" aria-hidden="true"></span>
+          <a
+            href="/privacidade/"
+            class="hidden rounded-full px-3 py-2 text-body transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none md:block">{t.pages.nav.privacidade}</a
+          >
+          <a
+            href="/termos/"
+            class="hidden rounded-full px-3 py-2 text-body transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none md:block">{t.pages.nav.termos}</a
+          >
+          <span class="mx-1 hidden h-5 w-px bg-hairline md:block" aria-hidden="true"></span>
           <button
             type="button"
             id="theme-toggle"
@@ -200,9 +215,9 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
             {t.footer.recursos}
           </p>
           <ul class="mt-3 space-y-1.5 text-sm">
-            <li><a class="text-body transition-colors hover:text-ink" href="#calculadora">Simulador</a></li>
-            <li><a class="text-body transition-colors hover:text-ink" href="#tabela">Tabela detalhada</a></li>
-            <li><a class="text-body transition-colors hover:text-ink" href="#como-funciona">Como funciona</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/#calculadora">Simulador</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/#tabela">Tabela detalhada</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/#como-funciona">Como funciona</a></li>
           </ul>
         </div>
         <div>
@@ -210,8 +225,10 @@ const faqs = [1, 2, 3, 4, 5].map((n) => ({
             {t.footer.sobre}
           </p>
           <ul class="mt-3 space-y-1.5 text-sm">
-            <li><a class="text-body transition-colors hover:text-ink" href="/">Calculadora</a></li>
-            <li><a class="text-body transition-colors hover:text-ink" href="#perguntas">Perguntas frequentes</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/sobre/">{t.pages.nav.sobre}</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/contato/">{t.pages.nav.contato}</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/privacidade/">{t.pages.nav.privacidade}</a></li>
+            <li><a class="text-body transition-colors hover:text-ink" href="/termos/">{t.pages.nav.termos}</a></li>
           </ul>
         </div>
       </div>
