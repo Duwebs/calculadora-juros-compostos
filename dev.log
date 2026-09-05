@@ -83,3 +83,45 @@
 [2m12:11:53[22m [34m[200][39m / [2m122ms[22m
 [2m12:12:23[22m [34m[watch][39m /src/styles/global.css
 [2m12:13:19[22m [34m[200][39m / [2m113ms[22m
+[2m12:35:15[22m [34m[200][39m / [2m312ms[22m
+[2m12:35:39[22m [34m[200][39m / [2m25ms[22m
+[2m12:35:58[22m [34m[200][39m / [2m28ms[22m
+[2m12:35:59[22m [34m[200][39m / [2m30ms[22m
+[2m12:46:34[22m Configuration file updated. Restarting...
+[2m12:46:36[22m [34m[watch][39m /src/styles/global.css
+[2m12:46:40[22m [34m[vite][39m connected.
+[2m12:47:30[22m [34m[vite][39m connected.
+[2m12:47:31[22m [34m[vite][39m Re-optimizing dependencies because lockfile has changed
+[2m12:47:33[22m [34m[vite][39m server restarted.
+[2m12:47:34[22m [34m[vite][39m [optimizer] bundling dependencies...
+[2m12:48:04[22m [34m[200][39m / [2m2276ms[22m
+[2m12:48:37[22m [34m[200][39m / [2m90ms[22m
+[2m12:48:47[22m Configuration file updated. Restarting...
+[2m12:48:48[22m [34m[watch][39m /src/styles/global.css
+[2m12:48:52[22m [34m[vite][39m connected.
+[2m12:51:05[22m [34m[vite][39m connected.
+[2m12:51:06[22m [34m[vite][39m server restarted.
+[2m12:51:16[22m [34m[200][39m / [2m950ms[22m
+[2m12:52:42[22m [34m[200][39m / [2m126ms[22m
+[2m12:53:26[22m Configuration file updated. Restarting...
+[2m12:53:30[22m [34m[watch][39m /src/styles/global.css
+[31m[1m12:53:32[22m [ERROR] [config][39m Unable to read C:\Users\openm\OneDrive\Desktop\calculadora juros compostos\package.json
+  [1mStack trace:[22m
+[2m    at C:\Users\openm\OneDrive\Desktop\calculadora juros compostos\node_modules\vitefu\src\index.js:41:11
+    [...] See full stack trace in the browser, or rerun with --verbose.[22m
+  [1mCaused by:[22m
+[2m  Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    [...] See full stack trace in the browser, or rerun with --verbose.[22m
+
+[31m[1m12:53:32[22m [ERROR][39m Continuing with previous valid configuration
+
+[2m12:53:39[22m [34m[200][39m / [2m267ms[22m
+[2m12:53:39[22m [34m[200][39m / [2m268ms[22m
+[2m12:54:03[22m Configuration file updated. Restarting...
+[2m12:54:04[22m [34m[watch][39m /src/styles/global.css
+[2m12:54:08[22m [34m[vite][39m connected.
+[2m12:56:14[22m [34m[vite][39m connected.
+[2m12:56:16[22m [34m[vite][39m server restarted.
+[2m12:56:44[22m [34m[200][39m / [2m3479ms[22m
+[2m12:59:44[22m [34m[200][39m / [2m8ms[22m
