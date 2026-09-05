@@ -1,0 +1,77 @@
+{
+  "site": {
+    "name": "Calculadora de Juros Compostos",
+    "title": "Calculadora de Juros Compostos — Simule seu rendimento",
+    "description": "Calcule gratuitamente o rendimento dos seus investimentos com juros compostos. Simule valor inicial, aportes mensais, prazo e taxa de juros com gráfico, tabela detalhada e exportação em CSV."
+  },
+  "nav": {
+    "calculadora": "Calculadora",
+    "como-funciona": "Como funciona",
+    "perguntas": "Perguntas frequentes"
+  },
+  "hero": {
+    "eyebrow": "CALCULADORA GRATUITA",
+    "title": "Simule o crescimento do seu dinheiro com juros compostos",
+    "subtitle": "Informe seus dados e veja, mês a mês, quanto seu patrimônio pode crescer. Gráfico interativo, tabela detalhada e exportação em CSV — sem cadastro."
+  },
+  "form": {
+    "title": "Simulação",
+    "valorInicial": "Valor inicial",
+    "valorInicialPh": "0,00…",
+    "aporteMensal": "Aporte mensal",
+    "aporteMensalPh": "0,00…",
+    "prazo": "Prazo",
+    "prazoPh": "Ex.: 10…",
+    "meses": "Meses",
+    "anos": "Anos",
+    "taxaJuros": "Taxa de juros",
+    "taxaJurosPh": "Ex.: 10,5…",
+    "mensal": "% ao mês",
+    "anual": "% ao ano",
+    "limpar": "Limpar"
+  },
+  "results": {
+    "title": "Resultado da simulação",
+    "valorTotal": "Valor total",
+    "totalInvestido": "Total investido",
+    "totalJuros": "Total em juros",
+    "percentualJuros": "do montante vieram de juros",
+    "exportarCsv": "Exportar CSV",
+    "exportarPdf": "Exportar PDF"
+  },
+  "chart": {
+    "title": "Evolução do patrimônio",
+    "aportes": "Aportes",
+    "juros": "Juros"
+  },
+  "table": {
+    "title": "Tabela detalhada",
+    "periodo": "Período",
+    "aporte": "Aporte",
+    "jurosMes": "Juros no período",
+    "jurosAcum": "Juros acumulados",
+    "totalInvestido": "Total investido",
+    "montante": "Montante",
+    "agruparAno": "Agrupar por ano",
+    "mostrarTudo": "Mostrar todos os meses"
+  },
+  "footer": {
+    "tagline": "Simulações gratuitas de juros compostos, rápidas e sem cadastro.",
+    "aviso": "As informações apresentadas têm caráter meramente informativo e educativo e não constituem recomendação de investimento.",
+    "recursos": "Recursos",
+    "sobre": "Sobre"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "q1": "O que são juros compostos?",
+    "a1": "Juros compostos são juros calculados sobre o valor acumulado, incluindo os juros anteriores — os famosos \"juros sobre juros\". Diferente dos juros simples, que incidem apenas sobre o valor inicial, os compostos fazem o patrimônio crescer de forma exponencial ao longo do tempo.",
+    "q2": "Como funciona o cálculo de juros compostos?",
+    "a2": "A fórmula básica é M = C × (1 + i)^t, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período e t é o número de períodos. Com aportes mensais, soma-se o valor de cada aporte ao capital antes de aplicar a taxa do mês seguinte.",
+    "q3": "Qual a diferença entre taxa mensal e anual?",
+    "a3": "A taxa anual não é simplesmente a mensal multiplicada por 12. Como os juros se acumulam, a conversão correta é: taxa mensal = (1 + taxa anual)^(1/12) − 1. Nossa calculadora faz essa conversão automaticamente para você.",
+    "q4": "A calculadora é gratuita?",
+    "a4": "Sim, totalmente gratuita e sem necessidade de cadastro. Você também pode exportar os resultados em CSV ou PDF para guardar ou compartilhar sua simulação.",
+    "q5": "O resultado considera inflação e impostos?",
+    "a5": "Não. Os valores são nominais, ou seja, não descontam a inflação nem o Imposto de Renda. Lembre-se de que o poder de compra do montante será menor no futuro — use o resultado como referência de crescimento financeiro."
+  }
+}

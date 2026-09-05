@@ -1,0 +1,271 @@
+---
+import t from "../i18n/pt.json";
+---
+
+<section
+  id="calculadora"
+  class="mx-auto w-full max-w-6xl px-6"
+  aria-label="Calculadora de juros compostos"
+>
+  <div
+    class="grid gap-6 rounded-lg border border-hairline bg-elevated p-6 shadow-[0_1px_1px_rgba(0,0,0,0.04)] lg:grid-cols-[380px_1fr]"
+  >
+    <!-- Inputs -->
+    <form id="calc-form" class="space-y-5" autocomplete="off" novalidate>
+      <h2 class="text-lg font-semibold tracking-tight text-ink">
+        {t.form.title}
+      </h2>
+
+      <div>
+        <label
+          for="valor-inicial"
+          class="block text-sm font-medium text-ink">Valor inicial</label
+        >
+        <div
+          class="mt-1.5 flex items-center rounded-sm border border-hairline bg-elevated transition-colors focus-within:border-link focus-within:ring-2 focus-within:ring-link/30"
+        >
+          <span
+            class="pl-3 text-sm text-mute select-none"
+            aria-hidden="true">R$</span
+          >
+          <input
+            type="text"
+            id="valor-inicial"
+            name="valor-inicial"
+            inputmode="decimal"
+            placeholder="1.000,00…"
+            class="w-full bg-transparent px-2 py-2 text-sm text-ink outline-none placeholder:text-faint"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label
+          for="aporte-mensal"
+          class="block text-sm font-medium text-ink">Aporte mensal</label
+        >
+        <div
+          class="mt-1.5 flex items-center rounded-sm border border-hairline bg-elevated transition-colors focus-within:border-link focus-within:ring-2 focus-within:ring-link/30"
+        >
+          <span
+            class="pl-3 text-sm text-mute select-none"
+            aria-hidden="true">R$</span
+          >
+          <input
+            type="text"
+            id="aporte-mensal"
+            name="aporte-mensal"
+            inputmode="decimal"
+            placeholder="200,00…"
+            class="w-full bg-transparent px-2 py-2 text-sm text-ink outline-none placeholder:text-faint"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="prazo" class="block text-sm font-medium text-ink"
+          >Prazo</label
+        >
+        <div class="mt-1.5 flex gap-2">
+          <input
+            type="text"
+            id="prazo"
+            name="prazo"
+            inputmode="numeric"
+            placeholder="10…"
+            class="w-full min-w-0 rounded-sm border border-hairline bg-elevated px-3 py-2 text-sm text-ink outline-none transition-colors placeholder:text-faint focus:border-link focus:ring-2 focus:ring-link/30"
+          />
+          <div
+            class="flex shrink-0 rounded-sm border border-hairline p-0.5"
+            role="group"
+            aria-label="Unidade do prazo"
+          >
+            <button
+              type="button"
+              id="prazo-anos"
+              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              aria-pressed="true">Anos</button
+            >
+            <button
+              type="button"
+              id="prazo-meses"
+              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              aria-pressed="false">Meses</button
+            >
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label for="taxa" class="block text-sm font-medium text-ink"
+          >Taxa de juros</label
+        >
+        <div class="mt-1.5 flex gap-2">
+          <div
+            class="flex w-full min-w-0 items-center rounded-sm border border-hairline bg-elevated transition-colors focus-within:border-link focus-within:ring-2 focus-within:ring-link/30"
+          >
+            <input
+              type="text"
+              id="taxa"
+              name="taxa"
+              inputmode="decimal"
+              placeholder="10,5…"
+              class="w-full bg-transparent px-3 py-2 text-sm text-ink outline-none placeholder:text-faint"
+            />
+            <span
+              class="pr-3 text-sm text-mute select-none"
+              aria-hidden="true">%</span
+            >
+          </div>
+          <div
+            class="flex shrink-0 rounded-sm border border-hairline p-0.5"
+            role="group"
+            aria-label="Unidade da taxa"
+          >
+            <button
+              type="button"
+              id="taxa-anual"
+              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              aria-pressed="true">Anual</button
+            >
+            <button
+              type="button"
+              id="taxa-mensal"
+              class="seg-btn rounded-[4px] px-3 py-1 text-sm font-medium transition-colors"
+              aria-pressed="false">Mensal</button
+            >
+          </div>
+        </div>
+        <p class="mt-1.5 text-xs text-mute" id="taxa-equiv" aria-live="polite"></p>
+      </div>
+
+      <button
+        type="reset"
+        class="rounded-sm border border-hairline bg-elevated px-3 py-1.5 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none"
+        >Limpar simulação</button
+      >
+    </form>
+
+    <!-- Results -->
+    <div class="flex flex-col gap-6">
+      <div aria-live="polite">
+        <h2 class="text-lg font-semibold tracking-tight text-ink">
+          {t.results.title}
+        </h2>
+        <div class="mt-3 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-md border border-hairline bg-elevated p-4">
+            <p class="font-mono text-xs text-mute uppercase">Valor total</p>
+            <p id="r-valor-total" class="num mt-1 text-xl font-semibold text-ink">
+              R$&nbsp;0,00
+            </p>
+          </div>
+          <div class="rounded-md border border-hairline bg-elevated p-4">
+            <p class="font-mono text-xs text-mute uppercase">Total investido</p>
+            <p
+              id="r-total-investido"
+              class="num mt-1 text-xl font-semibold text-ink"
+            >
+              R$&nbsp;0,00
+            </p>
+          </div>
+          <div class="rounded-md border border-link/40 bg-link-soft/40 p-4">
+            <p class="font-mono text-xs text-mute uppercase">Total em juros</p>
+            <p
+              id="r-total-juros"
+              class="num mt-1 text-xl font-semibold text-link-deep"
+            >
+              R$&nbsp;0,00
+            </p>
+          </div>
+        </div>
+        <p id="r-percentual" class="mt-2 text-xs text-mute"></p>
+      </div>
+
+      <!-- Chart -->
+      <div class="rounded-md border border-hairline bg-elevated p-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-ink">{t.chart.title}</h3>
+          <div class="flex items-center gap-4 text-xs text-body">
+            <span class="flex items-center gap-1.5">
+              <span
+                class="h-2.5 w-2.5 rounded-[2px] bg-link/70"
+                aria-hidden="true"></span>
+              {t.chart.aportes}
+            </span>
+            <span class="flex items-center gap-1.5">
+              <span
+                class="h-2.5 w-2.5 rounded-[2px] bg-pink/60"
+                aria-hidden="true"></span>
+              {t.chart.juros}
+            </span>
+          </div>
+        </div>
+        <svg
+          id="chart"
+          viewBox="0 0 600 220"
+          preserveAspectRatio="none"
+          class="mt-3 h-52 w-full"
+          role="img"
+          aria-label="Gráfico de crescimento do patrimônio ao longo do tempo"
+        >
+        </svg>
+        <div id="chart-empty" class="py-10 text-center text-sm text-mute">
+          Preencha os campos acima para ver a simulação…
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div
+    id="tabela"
+    class="mt-6 rounded-lg border border-hairline bg-elevated p-6 shadow-[0_1px_1px_rgba(0,0,0,0.04)]"
+  >
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <h3 class="text-lg font-semibold tracking-tight text-ink">
+        {t.table.title}
+      </h3>
+      <div class="no-print flex items-center gap-2">
+        <button
+          type="button"
+          id="btn-group"
+          class="rounded-sm border border-hairline bg-elevated px-3 py-1.5 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none"
+          aria-pressed="true">{t.table.agruparAno}</button
+        >
+        <button
+          type="button"
+          id="btn-csv"
+          class="rounded-sm border border-hairline bg-elevated px-3 py-1.5 text-sm font-medium text-ink transition-colors hover:bg-hairline-soft focus-visible:ring-2 focus-visible:ring-link focus-visible:outline-none"
+          >Exportar CSV</button
+        >
+        <button
+          type="button"
+          id="btn-pdf"
+          class="rounded-sm bg-ink px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-black focus-visible:ring-2 focus-visible:ring-link focus-visible:ring-offset-2 focus-visible:outline-none"
+          >Exportar PDF</button
+        >
+      </div>
+    </div>
+    <div class="mt-4 max-h-96 overflow-auto rounded-md border border-hairline">
+      <table class="num w-full text-right text-sm">
+        <thead
+          class="sticky top-0 bg-hairline-soft text-left font-mono text-xs text-mute uppercase"
+        >
+          <tr>
+            <th scope="col" class="px-4 py-2.5 text-left">{t.table.periodo}</th>
+            <th scope="col" class="px-4 py-2.5">{t.table.aporte}</th>
+            <th scope="col" class="px-4 py-2.5">{t.table.jurosMes}</th>
+            <th scope="col" class="px-4 py-2.5">{t.table.jurosAcum}</th>
+            <th scope="col" class="px-4 py-2.5">{t.table.totalInvestido}</th>
+            <th scope="col" class="px-4 py-2.5">{t.table.montante}</th>
+          </tr>
+        </thead>
+        <tbody id="table-body" class="divide-y divide-hairline-soft"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script src="../scripts/calculator.ts"></script>
+
+
