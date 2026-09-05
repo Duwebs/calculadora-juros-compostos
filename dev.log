@@ -131,3 +131,10 @@
 [2m13:47:30[22m [34m[watch][39m src/layouts/Layout.astro
 [2m13:47:32[22m [34m[200][39m / [2m213ms[22m
 [2m13:47:32[22m [34m[200][39m / [2m213ms[22m
+[2m14:23:14[22m [34m[watch][39m /src/styles/global.css
+[2m14:26:14[22m [34m[watch][39m /src/styles/global.css
+[2m14:26:15[22m [34m[vite][39m program reload
+[2m14:26:15[22m [34m[watch][39m public/favicon.svg
+[2m14:26:20[22m [34m[200][39m / [2m159ms[22m
+[2m14:26:24[22m [34m[watch][39m src/layouts/Layout.astro
+[2m14:26:25[22m [34m[200][39m / [2m67ms[22m
